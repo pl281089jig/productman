@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600italic,900);
+
+body{
+font: 300 24px/1.5 'Roboto Light', 'Roboto Black', 'Roboto', 'Raleway', sans-serif;
+color:#303030;
+background: #eeeeee;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 16px;
+	padding-right: 16px;
+	max-width: 1230px;
+
+}
+
+.ba-menu {
+	margin-top: 20px;
+	list-style: none;
+}
+
+.ba-menu li {
+	float:left;
+	margin-left:50px;
+}
+
+.ba-menu a {
+	color:  #303030;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left;
+	padding: 10px;
+}
+
+.ba-logo {
+	color: #303030;
+    font-size: 48px;
+}
+
+a {text-decoration: none;}
+
+.ba-header {
+	margin-top: 48px;
+	margin-bottom: 105px;
+}
+
+.ba-black-image {
+	float:right;
+}
+
+.ba-black-text {
+	text-align: right;
+	width: 60%;
+}
+
+.ba-black-text h2 {
+	margin: 0;
+	font-size: 150px;
+	font-weight: 900;
+	line-height: 150px;
+	text-align: right;
+	text-transform: uppercase;
+	font-family:'Raleway';
+
+}
+
+.ba-black-text p {
+	font-family: 'Roboto Light';
+	color:  #303030;
+}
+
+.ba-button {
+	text-decoration:none;
+	color:red;
+	text-align: right;
+}
+
+.ba-black-text a:hover {
+	text-decoration: underline;
+}
+
+.ba-featured {
+	  background-color: #FFF;
+	  border-radius: 5px;
+	  padding: 100px 72px;
+	  margin-top: 185px;
+  }
+
+.ba-featured-title {
+	font-family: 'Raleway';
+	margin: 0 auto;
+	padding:20px;
+	background: url(https://github.com/pl281089jig/productman/blob/master/img/underline.jpg?raw=true) no-repeat 50% 100%;
+}
+
+.ba-featured-text{
+	font-family: 'Raleway';
+	margin: 0 auto;
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 78px;
+    font-size: 18px;
+	max-width: 560px;
+}
+
+.ba-grid{
+	margin-left:70px;
+	margin-right:70px;
+}
+
+.ba-menu a:hover {
+	color: red;
+}
+
+.ba-img {
+	position:relative;
+}
+
+.ba-effect {
+	position:absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opasity:1;
+	border-radius:5px;
+	transform: translateY(-100%);
+	transition: all 0.3s ease-in-out;
+	overflow:hidden;
+}
+
+.ba-effect h3 {
+	font-family: 'Roboto' sans-serif;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: left;
+	bottom:42px;
+	left:40px;
+	margin: 0;
+	position:absolute;
+	padding-bottom: 20px;
+}
+
+.ba-effect h3:after {
+	content:'';
+	width: 90px;
+	height: 5px;
+	left: 0;
+	bottom: 0;
+	background: #FFF;
+	position:absolute;
+}
+
+.ba-img{
+	position:relative;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+}
+
+.ba-img:hover .ba-effect {
+	transform: translateY(0);
+}
+
+.ba-footer-title {
+	font-family: 'Raleway' sans-serif;
+	color:  #303030;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 150px;
+	text-align: center;
+	margin: 0;
+}
+
+.ba-footer p{
+	font-family: 'Raleway' sans-serif;
+	color:  #303030;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	top:-20px;
+	position:relative;
+	max-width: 560px;
+  }
+
+.ba-footer-form {
+	margin-bottom: 100px;
+}
+
+.ba-footer-form input {
+	font-family: 'Raleway' sans-serif;
+	color:  #979797;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+	line-height: 24px;
+	text-align: left;
+	padding: 29px 0 29px 70px;
+	border-radius: 50px 0 0 50px;
+	box-sizing: border-box;
+	width: 35%;
+	background:#FFF url(../img/mail.jpg)no-repeat 10% 50%;
+	border:none;
+	outline:none;
+}
+
+.ba-footer-form button{
+	font-family: 'Roboto' sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 900;
+	text-align: center;
+	padding: 26px 44px 26px 58px;
+	background: red;
+	border:none;
+	text-transform: uppercase;
+	border-radius: 0 50px 50px 0;
+	margin: -5px;
+	box-sizing: border-box;
+	min-height: 68px;
+	outline:none;
+}
+
+.ba-fb {
+	background: #FFF url(../img/fb.png)no-repeat 50% 50%;
+}
+
+.ba-tw {
+	background: #FFF url(../img/twitter.png)no-repeat 50% 50%;
+}
+
+.ba-ytube {
+	background: #FFF url(../img/ytube.png)no-repeat 50% 50%;
+}
+
+
+.ba-links a{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 20px;
+}
+
+.ba-links a:hover {
+	background-color: red;
+	}
+
+.ba-copyright{
+font-family: 'Raleway' sans-serif;
+color:  #979797;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+padding-top: 65px;
+padding-bottom: 35px;
+}
+
+.ba-copyright span {
+	color:  #303030;
+}
