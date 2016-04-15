@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600italic,900);
 
 body{
-font: 300 24px/1.5 'Roboto Light', 'Roboto Black', 'Roboto', 'Raleway', sans-serif;
+font: 300 24px/1.5 'Raleway', sans-serif;
 color:#303030;
 background: #eeeeee;
 }
@@ -59,7 +59,6 @@ textarea {
 	padding-left: 16px;
 	padding-right: 16px;
 	max-width: 1230px;
-
 }
 
 .ba-menu {
@@ -85,11 +84,17 @@ textarea {
     font-size: 48px;
 }
 
-a {text-decoration: none;}
+.ba-intro a {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	}
 
 .ba-header {
-	margin-top: 48px;
-	margin-bottom: 105px;
+	padding-top: 48px;
+	padding-bottom: 105px;
 }
 
 .ba-black-image {
@@ -105,16 +110,9 @@ a {text-decoration: none;}
 	margin: 0;
 	font-size: 150px;
 	font-weight: 900;
-	line-height: 150px;
+	line-height: 1;
 	text-align: right;
 	text-transform: uppercase;
-	font-family:'Raleway';
-
-}
-
-.ba-black-text p {
-	font-family: 'Roboto Light';
-	color:  #303030;
 }
 
 .ba-button {
@@ -132,36 +130,28 @@ a {text-decoration: none;}
 	  border-radius: 5px;
 	  padding: 100px 72px;
 	  margin-top: 185px;
+	  text-align:center;
   }
 
 .ba-featured-title {
-	font-family: 'Raleway';
 	margin: 0 auto;
-	padding:20px;
+	padding-bottom:20px;
 	background: url(https://github.com/pl281089jig/productman/blob/master/img/underline.jpg?raw=true) no-repeat 50% 100%;
 }
 
 .ba-featured-text{
-	font-family: 'Raleway';
 	margin: 0 auto;
-	text-align:center;
+
 	padding-top: 10px;
 	padding-bottom: 78px;
     font-size: 18px;
 	max-width: 560px;
 }
 
-.ba-grid{
-	margin-left:70px;
-	margin-right:70px;
-}
+
 
 .ba-menu a:hover {
 	color: red;
-}
-
-.ba-img {
-	position:relative;
 }
 
 .ba-effect {
@@ -179,7 +169,7 @@ a {text-decoration: none;}
 }
 
 .ba-effect h3 {
-	font-family: 'Roboto' sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color:  #ffffff;
 	font-size: 30px;
 	font-weight: 900;
@@ -203,8 +193,6 @@ a {text-decoration: none;}
 
 .ba-img{
 	position:relative;
-	width: 100%;
-	display: block;
 	overflow:hidden;
 }
 
@@ -212,18 +200,18 @@ a {text-decoration: none;}
 	transform: translateY(0);
 }
 
+.ba-footer {padding-top: 30px;}
+
 .ba-footer-title {
-	font-family: 'Raleway' sans-serif;
 	color:  #303030;
 	font-size: 48px;
 	font-weight: 900;
-	line-height: 150px;
 	text-align: center;
 	margin: 0;
+	padding-bottom: 20px;
 }
 
 .ba-footer p{
-	font-family: 'Raleway' sans-serif;
 	color:  #303030;
 	font-size: 18px;
 	font-weight: 400;
@@ -242,24 +230,32 @@ a {text-decoration: none;}
 }
 
 .ba-footer-form input {
-	font-family: 'Raleway' sans-serif;
 	color:  #979797;
 	font-size: 18px;
 	font-weight: 600;
 	font-style: italic;
 	line-height: 24px;
 	text-align: left;
-	padding: 29px 0 29px 70px;
+	padding: 28px 0 28px 70px;
 	border-radius: 50px 0 0 50px;
 	box-sizing: border-box;
 	width: 35%;
 	background:#FFF url(../img/mail.jpg)no-repeat 10% 50%;
 	border:none;
 	outline:none;
+	border: 2px solid transparent;
+}
+
+.ba-footer-form input:hover {
+	border-color: orange;
+}
+
+.ba-footer-form input:focus {
+	border-color: green;
 }
 
 .ba-footer-form button{
-	font-family: 'Roboto' sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 900;
@@ -273,6 +269,15 @@ a {text-decoration: none;}
 	box-sizing: border-box;
 	min-height: 68px;
 	outline:none;
+	border: 2px solid transparent;
+}
+
+.ba-footer-form button:hover {
+	background:orange;
+}
+
+.ba-footer-form button:active {
+	background: green;
 }
 
 .ba-fb {
@@ -297,20 +302,19 @@ a {text-decoration: none;}
 }
 
 .ba-links a:hover {
-	background-color: red;
+	background-color: #5C7A72;
 	}
 
-.ba-copyright{
-font-family: 'Raleway' sans-serif;
-color:  #979797;
-font-size: 18px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-padding-top: 65px;
-padding-bottom: 35px;
+.ba-copyright p{
+	color:  #979797;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding-top: 65px;
+	padding-bottom: 35px;
 }
 
-.ba-copyright span {
+.ba-copyright a {
 	color:  #303030;
 }
