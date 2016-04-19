@@ -66,6 +66,12 @@ textarea {
 	list-style: none;
 }
 
+@media (max-width:959px) {
+	.ba-menu{
+		display:none;
+	}
+}
+
 .ba-menu li {
 	float:left;
 	margin-left:50px;
@@ -141,14 +147,11 @@ a {
 
 .ba-featured-text{
 	margin: 0 auto;
-
 	padding-top: 10px;
 	padding-bottom: 78px;
     font-size: 18px;
 	max-width: 560px;
 }
-
-
 
 .ba-menu a:hover {
 	color: red;
@@ -317,4 +320,125 @@ a {
 
 .ba-copyright a {
 	color:  #303030;
+}
+
+
+@media (min-width: 768px) and (max-width: 960px){
+
+	.ba-header {
+		padding-bottom: 50px;
+	}
+
+	.ba-black-text{
+		width: 100%;
+	}
+
+	.ba-black-text h2 {
+    font-size: 130px;
+    text-align: center;
+    }
+
+    .ba-black-text p {
+    	text-align: center;
+    }
+
+    .ba-black-image {
+    	text-align:center;
+    	float:none;
+    }
+
+    .ba-featured {
+    	margin-top: 20px;
+    	padding: 10px;
+    }
+
+    .ba-footer-form input {
+    	font-size: 15px;
+    }
+
+    .ba-footer-form button{
+    	font-size: 16px;
+    }
+
+    .ba-featured img {
+    	max-width: 100%;
+    }
+
+    .ba-footer-form {
+    	margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 482px)  {
+	.ba-black-text{
+		width: 100%;
+	}
+	.ba-black-text h2 {
+	    font-size: 80px;
+	    float:none;
+	    text-align:center;
+	    margin-left: 30px;
+    }
+    .ba-black-text p {
+    	font-size: 15px;
+    	margin: 15px;
+    	float:none;
+    	text-align:center;
+    }
+
+    .ba-black-text .ba-button {
+		font-size: 20px;
+		margin-right: 15px;
+    }
+
+	.ba-black-image {
+		text-align: center;
+		float:none;
+		}
+
+    .ba-black-image img {
+	    max-width: 80%;
+	    float:none;
+	}
+
+	.ba-featured {
+    	margin-top: 30px;
+    	padding:10px;
+    }
+	.ba-featured img {
+    	max-width: 100%;
+    }
+	.ba-featured-text {padding-bottom: 20px;}
+
+	.ba-header {padding-bottom: 30px;}
+
+	.ba-footer-form input {
+    	font-size: 15px;
+    	padding: 8px 0 8px 55px;
+    	width: 50%;
+    }
+
+    .ba-footer p {
+    	font-size: 14px;
+    }
+
+    .ba-footer-form button{
+    	font-size: 13px;
+    	min-height: 45px;
+    	padding: 7px 14px 7px 25px;
+    }
+
+    .ba-footer-form {
+    	margin-bottom: 40px;
+
+    }
+
+    .ba-logo {font-size: 24px;}
+
+    .ba-footer-title {font-size: 38px;}
+
+    .ba-links a {
+
+    }
+
 }
